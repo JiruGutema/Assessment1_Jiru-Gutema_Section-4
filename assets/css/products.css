@@ -37,7 +37,8 @@ nav ul li a {
   border-radius: 10px;
 }
 main {
-  width: 1200px;
+  width: 80%;
+  max-width: 1200px;
   margin: auto;
 }
 .product-list {
@@ -58,4 +59,41 @@ footer {
   background-color: green;
   color: white;
   text-align: center;
+}
+@media (max-width: 1024px) {
+  main {
+    width: 100%;
+  }
+  main section {
+    gap: 20px;
+  }
+}
+@media (max-width: 780px) {
+  main {
+    width: 95%;
+    min-width: 400px;
+    flex-direction: column;
+  }
+  header,
+  nav {
+    min-width: 400px;
+  }
+  main section {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  main {
+    width: 95%;
+  }
+  main section {
+    gap: 15px;
+  }
 }
